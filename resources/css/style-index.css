@@ -1,4 +1,4 @@
-* {border: solid 1px blue !important;} */
+/* {border: solid 1px blue !important;} */
 
 html {
   font-family: helvetica, sans-serif;
@@ -163,18 +163,19 @@ footer a:hover {
 
 .contact i {
   color: rgba(76, 169, 165, 1);
+  padding-bottom: 1rem;
 }
 
 .contact h1 {
   align-self: center;
-  font-size: 2.2rem;
+  font-size: 5rem;
   font-weight: bold;
   color: rgba(76, 169, 165, 1);
   text-align: center;
 }
 
 .contact h3 {
-  font-size: 1.5rem;
+  font-size: 2.8rem;
   font-weight: bold;
   color: rgba(76, 169, 165, 1);
 }
@@ -188,6 +189,11 @@ footer a:hover {
 .contact h5 {
   font-size: 1.2rem;
   font-weight: bold;
+  color: rgba(91, 102, 104, 1);
+}
+
+.contact a {
+  text-decoration: none;
   color: rgba(91, 102, 104, 1);
 }
 
