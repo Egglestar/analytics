@@ -60,6 +60,7 @@ main {
   grid-auto-rows: minmax(3rem, auto);
   grid-gap: 1rem;
   background-color: rgba(232, 232, 232, 1);
+  padding: 1rem;
 }
 
 .first-box h1 {
@@ -94,6 +95,7 @@ main {
   grid-gap: 1.5rem;
   background-color: rgba(232, 232, 232, 1);
   margin: 2rem 0 2rem 0;
+  padding: 1rem;
 }
 
 .second-box h3 {
@@ -108,6 +110,7 @@ main {
   font-size: 1rem;
   font-weight: bold;
   color: rgba(91, 102, 104, .8);
+  padding: 1rem;
 }
 
 .second-box img {
@@ -119,22 +122,21 @@ main {
 
 footer {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: minmax(4rem, auto);
   grid-gap: 1.5rem;
   background-color: rgba(233, 233, 233, 1);
-  justify-items: center;
   align-items: center;
+  justify-items: center;
 }
 
-.footer-links a {
+footer a {
   text-decoration: none;
   color: rgba(91, 102, 104, 1);
   font-weight: bold;
-  font-size: 0.8rem;
-  padding-left: 2rem;
+  padding-right: 1rem;
 }
 
-.footer-links a:hover {
+footer a:hover {
   color: rgba(55, 62, 64, 1);
 }
