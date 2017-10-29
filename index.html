@@ -6,58 +6,64 @@
     <link rel="stylesheet" href="./resources/css/reset.css" type="text/css">
     <link rel="stylesheet" href="./resources/css/style-index.css" type="text/css">
     <link rel="stylesheet" href="./resources/font-awesome-4.7-2.0/css/font-awesome.min.css">
+
   </head>
+
   <body>
-    <header>
-
-      <!-- Mobile -->
-      <nav class="mobile">
-        <li id="logo"><a href="./index.html"><img src="./resources/images/logo-color-fertig.svg" alt="LOGO PACIFIC ANALYTICS"></a></li>
-        <li id="project"><a href="./project.html"><i class="fa fa-book fa-3x" aria-hidden="true"></i></a></li>
-        <li id="team"><a href="./team.html"><i class="fa fa-users fa-3x" aria-hidden="true"></i></a></li>
-        <li id="contact"><a href="./contact.html"><i class="fa fa-address-card fa-3x" aria-hidden="true"></i></a></li>
+      <nav>
+        <a id="logo" href="#home"><img src="resources/images/logo-white-text.png" alt="LOGO"></a>
+        <div class="dropdown">
+          <a class="dropbtn" onclick="dropFunciton()" href="#blnak"><i class="fa fa-bars fa-3x" aria-hidden="true"></i></a>
+          <div id="myDropdown" class="drop-content">
+            <a href="#">WORK</a>
+            <a href="#">ABOUT US</a>
+            <a href="#">CLIENTS</a>
+            <a href="#">CONTACT</a>
+          </div>
+        </div>
       </nav>
 
-      <!-- Desktop -->
-      <!--<nav class="desktop">
-        <li><a id="link-main" href="./index.html">MAIN</a></li>
-        <li><a id="link-project" href="./project.html">PROJECT</a></li>
-        <li><a id="link-team" href="./team.html">TEAM</a></li>
-        <li><a id="link-contact" href=".contact.html">CONTACT</a></li>
-      </nav>
-    -->
-    </header>
-
-    <!-- <main>
-      <div class="first-box">
-         <h1>Combine genomics and phenomics . . .</h1>
-        <img src="./resources/images/world.png" alt="World">
-        <h3>...we connect and analyse your datas and get the best out of it!</h3>
+    <main>
+      <div class="topper">
+        <p>Insights, Analytics, Models, Visualisations</p>
+        <h1>IS DATA MAKING NO SENSE?</h1>
       </div>
-
-      <div class="second-box">
-        <h3>Our way of thinking:</h3>
-        <div id="box1">
-          <img src="./resources/images/knowledge.png" alt="knwoledge">
-          <h4>laber rhabarber überschrift</h4>
+      <div class="main-text">
+        <div class="first-part">
+            <h4>We make data speak your language.</h4>
+            <h6>Some of the most simple questions are the hardest to answer.
+            Your customers are in your data.  Find out how you can help.</h6>
         </div>
-        <div id="box2">
-          <img src="./resources/images/matrix.png" alt="matrix">
-          <h4>TEXT für box mit laber Rhabarber die zweite</h4>
-        </div>
-        <div id="box3">
-          <img src="./resources/images/mind.png" alt="mind">
-          <h4>TEXT für box3 mit laber Rhabarber</h4>
+        <div class="sec-part">
+          <div class="main-image">
+            <img src="resources/images/genom strang von ADIMAS:FOTOLIA.jpg" alt="GENOME">
+          </div>
+          <h5>ABOUT</h5>
+          <h6>Find out about our passion, mission, our approach, and the results
+          of our decades of cumulative experience.</h6>
+          <a href="#">LEARN MORE</a>
+          </div>
+          <div class="third-part">
+            <div class="main-image">
+              <img src="https://cdn.mos.cms.futurecdn.net/XbYnCuVzbcHPHuYzCGuSmf-970-80.jpg" alt="">
+            </div>
+            <h5>TAKE ACTION</h5>
+            <h6>Ready to take the next step? You can collaborate with us and or
+              engage our services.</h6>
+          </div>
+        <div class="fourth-part">
+          <h4>Change your mind of thinking data . . .</h4>
+          <h5>Use our powerfull tool to get the best out of your datas - worldwide</h5>
         </div>
       </div>
     </main>
-
     <footer>
-        <p>&copy pacific analytics 2017. All rights reserved.</p>
-        <div class="footer-links">
-          <a href="./about.html">About</a>
-          <a href="./disclaimer.html">Disclaimer</a>
-        </div>
-    </footer> -->
+      <p id="copy">Copyright &#9400 PACIFIC ANALYTICS 2017</p>
+      <a id="facebook" href="#"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
+      <a id="instagram" href="#"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+      <a id="linkedin" href="#"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+      <a id="privacy" href="#">Privacy Policy</a>
+      <a id="terms" href="#">Terms of Use</a>
+    </footer>
   </body>
 </html>
