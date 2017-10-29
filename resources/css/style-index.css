@@ -164,7 +164,7 @@ main {
                       ". . . . . . . . . . . ."
                       ". . . third third third third third third . . ."
                       " . . . . . . . . . . . ."
-                      ". . fourth fourth fourth fourth fourth fourth fourth fourth . . "
+                      ". fourth fourth fourth fourth fourth fourth fourth fourth fourth fourth . "
   }
 
 .first-part {
@@ -218,6 +218,7 @@ main {
 
 .fourth-part h4 {
   color: rgba(54, 179, 168, 1);
+  padding-bottom: 1.5rem;
 }
 
 .main-image img{
