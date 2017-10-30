@@ -61,6 +61,7 @@ nav {
 #menu {
   color: white;
   padding-right: 2rem;
+  cursor: pointer;
 }
 
 nav img {
@@ -73,6 +74,7 @@ nav img {
 
 .menu {
   position: absolute;
+  transform: translateX(0);
   top: 6rem;
   left: 0;
   right: 0;
