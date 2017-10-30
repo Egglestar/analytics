@@ -3,24 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>PACIFIC ANALYTICS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./resources/css/reset.css" type="text/css">
     <link rel="stylesheet" href="./resources/css/style-index.css" type="text/css">
     <link rel="stylesheet" href="./resources/font-awesome-4.7-2.0/css/font-awesome.min.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700" rel="stylesheet">
   </head>
 
   <body>
       <nav>
         <a id="logo" href="#home"><img src="resources/images/logo-white-text.png" alt="LOGO"></a>
-        <div class="dropdown">
-          <a class="dropbtn" onclick="dropFunciton()" href="#blnak"><i class="fa fa-bars fa-3x" aria-hidden="true"></i></a>
-          <div id="myDropdown" class="drop-content">
-            <a href="#">WORK</a>
-            <a href="#">ABOUT US</a>
-            <a href="#">CLIENTS</a>
-            <a href="#">CONTACT</a>
+        <a id="menu" href="#"><i class="fa fa-bars fa-3x" aria-hidden="true"></i></a>
+          <div class="menu">
+            <ul>
+              <li><a href="#">WORK</a></li>
+              <li><a href="#">ABOUT US</a></li>
+              <li><a href="#">CLIENTS</a></li>
+              <li><a href="#">CONTACT</a></li>
+            </ul>
           </div>
-        </div>
       </nav>
 
     <main>
@@ -31,8 +32,8 @@
       <div class="main-text">
         <div class="first-part">
             <h4>We make data speak your language.</h4>
-            <h6>Some of the most simple questions are the hardest to answer.
-            Your customers are in your data.  Find out how you can help.</h6>
+            <h5>Some of the most simple questions are the hardest to answer.
+            Your customers are in your data.  Find out how you can help.</h5>
         </div>
         <div class="sec-part">
           <div class="main-image">
@@ -65,5 +66,10 @@
       <a id="privacy" href="#">Privacy Policy</a>
       <a id="terms" href="#">Terms of Use</a>
     </footer>
+
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="./resources/js/dropdown.js"></script>
+
   </body>
 </html>
