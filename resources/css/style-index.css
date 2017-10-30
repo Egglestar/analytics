@@ -108,12 +108,15 @@ nav.menu-open .menu {
   /*transition: top 1s ease-in 0s;
   top: 6rem;*/
 
+  -webkit-transition: opacity 0.2s ease-in 0s;
   transition: opacity 0.2s ease-in 0s;
   opacity: 1;
 }
 
 nav.menu-open #menu {
+  -webkit-transition: transform 0.5s ease-in 0s;
   transition: transform 0.5s ease-in 0s;
+  -webkit-transform: rotateZ(90deg);
   transform: rotateZ(90deg);
   padding-top: 2rem;
 }
