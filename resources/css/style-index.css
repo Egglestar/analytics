@@ -81,6 +81,7 @@ nav img {
   background-color: rgba(33, 42, 52, .95);
   z-index: 2;
   opacity: 0;
+  visibility: visible;
 }
 
 .menu ul li {
