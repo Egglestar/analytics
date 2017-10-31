@@ -61,7 +61,7 @@ nav {
 #menu {
   color: white;
   padding-right: 2rem;
-  cursor: pointer;
+  cursor: pointer; /* ????? need this for iphone??*/
 }
 
 nav img {
@@ -97,15 +97,16 @@ nav img {
   font-weight: 300;
   font-size: 3.5rem;
   color: white;
+  cursor: pointer;
 }
 
-.menu a:hover {
+/*.menu a:hover {
   color: rgba(54, 179, 168, 1);
 }
 
 #menu:hover {
   color: rgba(54, 179, 168, 1);
-}
+} */
 
 nav.menu-open .menu {
   /*transition: top 1s ease-in 0s;
