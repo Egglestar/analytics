@@ -175,9 +175,9 @@ main {
   align-items: center;
   grid-template-areas: ". . . . . . . . . . . ."
                       " . . first first first first first first first first . ."
-                      ". . . sec sec sec sec sec sec . . ."
+                      ". . sec sec sec sec sec sec sec sec . ."
                       ". . . . . . . . . . . ."
-                      ". . . third third third third third third . . ."
+                      ". . third third third third third third third third . ."
                       " . . . . . . . . . . . ."
                       ". fourth fourth fourth fourth fourth fourth fourth fourth fourth fourth . "
   }
@@ -249,10 +249,7 @@ main {
   width: 100%;
 }
 
-.main-image {
-  max-width: 100%;
-  height: auto;
-}
+
 
 
             /* FOOTER */
@@ -266,7 +263,7 @@ footer {
   grid-auto-flow: row;
   margin-top: 3rem;
   grid-template-areas:
-  "copy copy copy . facebook instagram linkedin . . privacy terms . ";
+  "copy copy copy . . facebook instagram linkedin . . privacy terms ";
   justify-items: center;
   align-items: center;
   grid-gap: 0.5rem;
