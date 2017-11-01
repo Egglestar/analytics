@@ -100,28 +100,32 @@ nav img {
   cursor: pointer;
 }
 
-/*.menu a:hover {
+.menu a:hover {
   color: rgba(54, 179, 168, 1);
 }
 
 #menu:hover {
   color: rgba(54, 179, 168, 1);
-} */
+}
 
 nav.menu-open .menu {
   /*transition: top 1s ease-in 0s;
-  top: 6rem;*/
+  top: 6rem;*/ /* different showing of menu bar */
 
-  -webkit-transition: opacity 0.2s ease-in 0s;
+  -webkit-transition: -webkit-opacity 0.2s ease-in 0s;
+  -ms-transition: opacity 0.2s ease-in 0s;
   transition: opacity 0.2s ease-in 0s;
   opacity: 1;
 }
 
 nav.menu-open #menu {
-  -webkit-transition: transform 0.5s ease-in 0s;
+  -webkit-transition: -webkit-transform 0.5s ease-in 0s;
+  -ms-transition: transform 0.5s ease-in 0s;
   transition: transform 0.5s ease-in 0s;
-  -webkit-transform: rotateZ(90deg);
-  transform: rotateZ(90deg);
+  -webkit-transform: -webkit-rotateZ(89.9deg);
+  -ms-transform: rotateZ(89.9deg);
+  -moz-transform: rotateZ(89.9deg);
+  transform: rotateZ(89.9deg);
   padding-top: 2rem;
 }
 
@@ -147,8 +151,6 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 1.5rem;
-
 }
 
 .topper h1 {
@@ -162,6 +164,7 @@ main {
   color: white;
   text-align: center;
   font-style: italic;
+  padding: 0 1rem 0 1rem;
 }
 
             /* MAIN TEXT */
@@ -264,12 +267,11 @@ footer {
   grid-auto-flow: row;
   margin-top: 3rem;
   grid-template-areas:
-  "copy copy copy . . facebook instagram linkedin . . privacy terms ";
+  "copy copy copy copy . facebook instagram linkedin . . privacy terms terms ";
   justify-items: center;
   align-items: center;
   grid-gap: 0.5rem;
   color: white;
-  padding: 0 2rem 0 2rem;
 }
 
 footer a {
@@ -282,7 +284,7 @@ footer a:hover {
 
 #copy {
   grid-area: copy;
-  padding-left: 1rem;
+  padding-left: 1.5rem;
 }
 
 #facebook {
@@ -303,4 +305,5 @@ footer a:hover {
 
 #terms {
   grid-area: terms;
+  padding-right: 1.5rem;
 }
