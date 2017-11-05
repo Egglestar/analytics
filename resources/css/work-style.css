@@ -107,6 +107,10 @@ nav img {
   color: rgba(54, 179, 168, 1);
 }
 
+#work:visited {
+  color: rgba(54, 179, 168, 1);
+}
+
 nav.menu-open .menu {
   /*transition: top 1s ease-in 0s;
   top: 6rem;*/ /* different showing of menu bar */
@@ -136,6 +140,8 @@ nav.menu-open #menu {
 main {
 width: 100%;
 height: auto;
+overflow-x: hidden;
+overflow-y: auto;
 }
 
 /* FIRST IMAGE */
@@ -153,6 +159,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
+transform: translateZ(-2px) scale(1.1);
 }
 
 .topper h1 {

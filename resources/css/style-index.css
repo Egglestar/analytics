@@ -138,6 +138,8 @@ nav.menu-open #menu {
 main {
   width: 100%;
   height: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
             /* FIRST IMAGE */
@@ -155,6 +157,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  transform: translateZ(-2px) scale(1.1);
 }
 
 .topper h1 {
