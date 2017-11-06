@@ -3,64 +3,67 @@
   <head>
     <meta charset="utf-8">
     <title>PACIFIC ANALYTICS</title>
-    <link rel="stylesheet" href="./resources/css/reset.css" type="text/css">
-    <link rel="stylesheet" href="./resources/css/style-index.css" type="text/css">
-    <link rel="stylesheet" href="./resources/font-awesome-4.7-2.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="resources/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="resources/css/contact-style.css" type="text/css">
+    <link rel="stylesheet" href="resources/font-awesome-4.7-2.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,700" rel="stylesheet">
   </head>
-  <body>
-    <header>
 
-      <!-- Mobile -->
-      <nav class="mobile">
-        <li><a href="./index.html"><i class="fa fa-home fa-3x" aria-hidden="true"></i></a></li>
-        <li><a href="./project.html"><i class="fa fa-book fa-3x" aria-hidden="true"></i></a></li>
-        <li><a href="./index.html"><img src="./resources/images/logo-color-fertig.svg" alt="LOGO PACIFIC ANALYTICS"></a></li>
-        <li><a href="./team.html"><i class="fa fa-users fa-3x" aria-hidden="true"></i></a></li>
-        <li><a href="./contact.html"><i class="fa fa-address-card fa-3x" aria-hidden="true"></i></a></li>
+  <body>
+      <nav>
+        <a id="logo" href="index.html"><img src="resources/images/logo-white-text.png" alt="LOGO"></a>
+        <button id="menu" onclick="resources/js/dropdown.js" type="button" name="nav-button"><i class="fa fa-bars fa-3x" aria-hidden="true"></i></button>
+          <div class="menu">
+            <ul>
+              <li><a id="work" href="work.html">WORK</a></li>
+              <li><a id="about" href="about.html">ABOUT US</a></li>
+              <li><a id="clients" href="clients.html">CLIENTS</a></li>
+              <li><a id="contact" href="contact.html">CONTACT</a></li>
+            </ul>
+          </div>
       </nav>
-    </header>
 
     <main>
-      <div class="back-pic">
 
-      </div>
-      <div class="contact">
+      <div class="topper">
+        <p>Mail, Call, Visit</p>
         <h1>GET IN TOUCH</h1>
-        <div class="address">
+      </div>
+
+      <div class="main-text">
+
+        <div id="email">
+          <i id="email-icon "class="fa fa-envelope fa-3x icon" aria-hidden="true"></i>
+          <h5><a href="mailto:info@pacificanalytics.com.au?subject=request">
+            info@pacificanalytics.com.au</a></h5>
+        </div>
+
+        <div id="phone">
+          <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
+          <h5><a href="tel:+61429576860">+61 (0) 429 576 860</a></h5>
+        </div>
+
+        <div id="address">
           <i class="fa fa-map-marker fa-3x" aria-hidden="true"></i>
-          <h3>ADDRESS</h3>
-          <h4>Pacific Analytics</h4>
           <h5><a href="https://www.google.com.au/maps/place/9%2F86+N+Steyne,+Manly+NSW+2095/@-33.7920982,151.2846062,17z/data=!3m1!4b1!4m5!3m4!1s0x6b12ab04107458b7:0x24f7a84e8a31f611!8m2!3d-33.7920982!4d151.2867949" target="_blank">
           9/86 North Steyne, Manly 2095, NSW, Australia</a></h5>
         </div>
-        <div class="back-pic2">
-
-        </div>
-        <div class="phone">
-          <i class="fa fa-phone fa-3x" aria-hidden="true"></i>
-          <h3>PHONE</h3>
-          <h4>Pacific Analytics Office</h4>
-          <h5><a href="tel:+61429576860">+61 (0) 429 576 860</a></h5>
-        </div>
-        <div class="email">
-          <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
-          <h3>EMAIL</h3>
-          <h4>Request for proposals</h4>
-          <h5><a href="mailto:info@pacificanalytics.com.au?subject=request">
-            info@pacificanalytics.com.au</a></h5>
-          <h4>Employment oportunities</h4>
-          <h5><a href="mailto:career@pacificanalytics.com.au?subject=career">
-            career@pacificanalytics.com.au</a></h5>
-        </div>
       </div>
+
     </main>
 
     <footer>
-        <p>&copy pacific analytics 2017. All rights reserved.</p>
-        <div class="footer-links">
-          <a href="./about.html">About</a>
-          <a href="./disclaimer.html">Disclaimer</a>
-        </div>
+      <p id="copy">Copyright &#9400 PACIFIC ANALYTICS 2017</p>
+      <a id="facebook" href="#"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a>
+      <a id="instagram" href="#"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>
+      <a id="linkedin" href="#"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+      <a id="privacy" href="#">Privacy Policy</a>
+      <a id="terms" href="#">Terms of Use</a>
     </footer>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="resources/js/dropdown.js"></script>
+
   </body>
 </html>

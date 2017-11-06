@@ -1,0 +1,281 @@
+html {
+  width: 100%;
+  height: auto;
+  font-size: 13px;
+  color: rgba(33, 42, 52, 1);
+  font-family: 'Source Serif Pro', serif;
+}
+
+h1 {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+            /* HEADER */
+
+nav {
+  height: 6rem;
+  background-color: rgba(33, 42, 52, 1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+
+#menu {
+  color: white;
+  padding-right: 1rem;
+  background: transparent;
+  border: none;
+  cursor: pointer; /* ????? need this for iphone??*/
+}
+
+nav img {
+  height: auto;
+  width: 12rem;
+  padding-left: 1rem;
+}
+
+/* DROPDOWN NAV FUNCTION */
+
+.menu {
+  position: absolute;
+  transform: translateX(0);
+  top: 6rem;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 105vh;
+  background-color: rgba(33, 42, 52, .95);
+  z-index: 2;
+  opacity: 0;
+  visibility: visible;
+  padding-top: 2rem;
+}
+
+.menu ul li {
+  min-height: 3.5rem;
+  padding: 1.2rem;
+  text-align: center;
+}
+
+.menu ul li a {
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 300;
+  font-size: 3.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.menu a:hover {
+  color: rgba(54, 179, 168, 1);
+}
+
+#menu:hover {
+  color: rgba(54, 179, 168, 1);
+}
+
+#contact:visited {
+  color: rgba(54, 179, 168, 1);
+}
+
+nav.menu-open .menu {
+  /*transition: top 1s ease-in 0s;
+  top: 6rem;*/ /* different showing of menu bar */
+
+  -webkit-transition: -webkit-opacity 0.2s ease-in 0s;
+/*  -ms-transition: opacity 0.2s ease-in 0s;
+  -moz-transition: opacity 0.2s ease-in 0s;*/
+  transition: opacity 0.2s ease-in 0s;
+  opacity: 1;
+}
+
+nav.menu-open #menu {
+  -webkit-transition: -webkit-transform 0.5s ease-in 0s;
+  /*-ms-transition: transform 0.5s ease-in 0s;
+  -moz-transition: transform 0.5s ease-in 0s;*/
+  transition: transform 0.5s ease-in 0s;
+  -webkit-transform: -webkit-rotateZ(89.9deg);
+  /*-ms-transform: rotateZ(89.9deg);
+  -moz-transform: rotateZ(89.9deg);*/
+  transform: rotateZ(89.9deg);
+  padding-top: 2rem;
+}
+
+
+/* MAIN */
+
+main {
+width: 100%;
+height: auto;
+overflow-x: hidden;
+overflow-y: auto;
+}
+
+/* FIRST IMAGE */
+.topper {
+background-image: url("../images/william-iven-8515.jpg"); /*Photo by William Iven on Unsplash*/
+opacity: 0.85;
+background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position: center;
+width: 100%;
+height: 100vh;
+background-color: rgba(43, 52, 62, .8);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+-webkit-transform: translateZ(-2px) scale(1.1);
+transform: translateZ(-2px) scale(1.1);
+}
+
+.topper h1 {
+color: white;
+text-align: center;
+padding: 3rem 1.5rem 0 1.5rem;
+}
+
+.topper p {
+font-size: 1.5rem;
+color: white;
+text-align: center;
+font-style: italic;
+padding: 0 1rem 0 1rem;
+}
+
+
+            /* MAIN TEXT */
+
+.main-text {
+  padding-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-flow: row;
+  grid-gap: 1rem;
+  justify-items: center;
+  align-items: center;
+  grid-template-areas:"email email email email email email email email email email email email "
+                      ". . . . . . . . . . . ."
+                      ". phone phone phone phone phone phone phone phone phone phone ."
+                      ". . . . . . . . . . . ."
+                      ". address address address address address address address address address address .";
+}
+
+#email {
+  grid-area: email;
+  width: 100%;
+  text-align: center;
+  overflow: visible;
+}
+
+#phone {
+  grid-area: phone;
+  width: 100%;
+  text-align: center;
+}
+
+#address {
+  grid-area: address;
+  width: 100%;
+  text-align: center;
+}
+
+#email i, #phone i, #address i {
+  color: rgba(54, 179, 168, 1);
+  padding-bottom: 1.5rem;
+}
+
+#email h5, #phone h5, #address h5 {
+  padding-bottom: 2rem;
+}
+
+
+            /* FOOTER */
+
+footer {
+  background-color: rgba(33, 42, 52, 1);
+  width: 100%;
+  height: 9rem;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-flow: row;
+  margin-top: 3rem;
+  grid-template-areas:
+  ". . . . . . . . . . . ."
+  ". . . facebook facebook instagram instagram linkedin linkedin . . ."
+  "copy copy copy copy . . . . privacy privacy terms terms";
+  justify-items: center;
+  align-items: center;
+  grid-gap: 0.5rem;
+  color: white;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  color: rgba(54, 179, 168, 1);
+}
+
+#copy {
+  grid-area: copy;
+  padding-left: 1rem;
+}
+
+#facebook {
+  grid-area: facebook;
+}
+
+#instagram {
+  grid-area: instagram;
+}
+
+#linkedin {
+  grid-area: linkedin;
+}
+
+#privacy {
+  grid-area: privacy;
+}
+
+#terms {
+  grid-area: terms;
+  padding-right: 1rem;
+}
