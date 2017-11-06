@@ -60,9 +60,9 @@ nav {
 
 #menu {
   color: white;
-  padding-right: 1rem;
   background-color: transparent;
-  border: none;
+  border: 0.1rem white solid;
+  border-radius: 0.5rem;
   cursor: pointer; /* ????? need this for iphone??*/
 }
 
@@ -131,7 +131,6 @@ nav.menu-open #menu {
   /*-ms-transform: rotateZ(89.9deg);
   -moz-transform: rotateZ(89.9deg);*/
   transform: rotateZ(89.9deg);
-  padding-top: 2rem;
 }
 
 
