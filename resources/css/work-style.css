@@ -282,7 +282,9 @@ footer {
   grid-auto-flow: row;
   margin-top: 3rem;
   grid-template-areas:
-  "copy copy copy copy . facebook instagram linkedin . . privacy terms terms ";
+  ". . . . . . . . . . . ."
+  ". . . facebook facebook instagram instagram linkedin linkedin . . ."
+  "copy copy copy copy copy . . . privacy privacy terms terms";
   justify-items: center;
   align-items: center;
   grid-gap: 0.5rem;
@@ -320,5 +322,5 @@ footer a:hover {
 
 #terms {
   grid-area: terms;
-  padding-right: 1.5rem;
+  padding-right: 1rem;
 }

@@ -61,6 +61,8 @@ nav {
 #menu {
   color: white;
   padding-right: 1rem;
+  background-color: transparent;
+  border: none;
   cursor: pointer; /* ????? need this for iphone??*/
 }
 
@@ -274,7 +276,9 @@ footer {
   grid-auto-flow: row;
   margin-top: 3rem;
   grid-template-areas:
-  "copy copy copy copy . facebook instagram linkedin . . privacy terms terms ";
+  ". . . . . . . . . . . ."
+  ". . . facebook facebook instagram instagram linkedin linkedin . . ."
+  "copy copy copy copy copy . . . privacy privacy terms terms";
   justify-items: center;
   align-items: center;
   grid-gap: 0.5rem;
