@@ -61,7 +61,7 @@ nav {
 #menu {
   color: white;
   background-color: transparent;
-  border: 0.1rem white solid;
+  border: 0.2rem white solid;
   border-radius: 0.5rem;
   cursor: pointer; /* ????? need this for iphone??*/
 }
